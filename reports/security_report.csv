@@ -1,0 +1,2 @@
+Attack,Severity,Description,Mitigation
+PortScan,Medium,Port scanning activity.,Block scanner IP. | Increase logging. | Close unused ports.

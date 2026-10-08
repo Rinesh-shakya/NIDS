@@ -1,0 +1,138 @@
+{
+    "BENIGN": {
+        "Severity": "None",
+        "Description": "Normal network traffic.",
+        "Mitigation": [
+            "No action required."
+        ]
+    },
+    "Bot": {
+        "Severity": "High",
+        "Description": "Botnet infected host communicating with attacker.",
+        "Mitigation": [
+            "Disconnect infected host.",
+            "Run malware scan.",
+            "Block C2 server.",
+            "Monitor outbound traffic."
+        ]
+    },
+    "DDoS": {
+        "Severity": "Critical",
+        "Description": "Distributed Denial of Service attack.",
+        "Mitigation": [
+            "Enable rate limiting.",
+            "Block attacker IPs.",
+            "Deploy DDoS protection.",
+            "Enable firewall filtering.",
+            "Notify administrator."
+        ]
+    },
+    "DoS GoldenEye": {
+        "Severity": "High",
+        "Description": "HTTP DoS attack.",
+        "Mitigation": [
+            "Rate limit HTTP traffic.",
+            "Deploy Web Application Firewall.",
+            "Block suspicious IP."
+        ]
+    },
+    "DoS Hulk": {
+        "Severity": "High",
+        "Description": "HTTP Flood attack.",
+        "Mitigation": [
+            "Enable firewall rules.",
+            "Limit HTTP requests.",
+            "Drop excessive packets."
+        ]
+    },
+    "DoS Slowhttptest": {
+        "Severity": "Medium",
+        "Description": "Slow HTTP attack.",
+        "Mitigation": [
+            "Reduce connection timeout.",
+            "Limit concurrent sessions.",
+            "Use reverse proxy."
+        ]
+    },
+    "DoS slowloris": {
+        "Severity": "Medium",
+        "Description": "Slowloris attack.",
+        "Mitigation": [
+            "Configure web server timeout.",
+            "Limit open connections.",
+            "Deploy WAF."
+        ]
+    },
+    "FTP-Patator": {
+        "Severity": "High",
+        "Description": "FTP brute-force attack.",
+        "Mitigation": [
+            "Lock account after failed logins.",
+            "Enable MFA.",
+            "Use strong passwords."
+        ]
+    },
+    "Heartbleed": {
+        "Severity": "Critical",
+        "Description": "Heartbleed vulnerability exploitation.",
+        "Mitigation": [
+            "Patch OpenSSL.",
+            "Replace certificates.",
+            "Reset credentials."
+        ]
+    },
+    "Infiltration": {
+        "Severity": "Critical",
+        "Description": "Internal compromise attempt.",
+        "Mitigation": [
+            "Disconnect infected machine.",
+            "Run forensic investigation.",
+            "Monitor lateral movement."
+        ]
+    },
+    "PortScan": {
+        "Severity": "Medium",
+        "Description": "Port scanning activity.",
+        "Mitigation": [
+            "Block scanner IP.",
+            "Increase logging.",
+            "Close unused ports."
+        ]
+    },
+    "SSH-Patator": {
+        "Severity": "High",
+        "Description": "SSH brute-force attack.",
+        "Mitigation": [
+            "Disable password authentication.",
+            "Use SSH keys.",
+            "Block attacker IP."
+        ]
+    },
+    "Web Attack \ufffd Brute Force": {
+        "Severity": "High",
+        "Description": "Web login brute-force attack.",
+        "Mitigation": [
+            "Enable CAPTCHA.",
+            "Lock account.",
+            "Require strong passwords."
+        ]
+    },
+    "Web Attack \ufffd Sql Injection": {
+        "Severity": "Critical",
+        "Description": "SQL Injection attack.",
+        "Mitigation": [
+            "Use prepared statements.",
+            "Validate user input.",
+            "Deploy Web Application Firewall."
+        ]
+    },
+    "Web Attack \ufffd XSS": {
+        "Severity": "Medium",
+        "Description": "Cross-Site Scripting attack.",
+        "Mitigation": [
+            "Sanitize user input.",
+            "Escape HTML output.",
+            "Enable Content Security Policy."
+        ]
+    }
+}
